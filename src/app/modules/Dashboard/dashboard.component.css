@@ -1,0 +1,36 @@
+.ngx-pagination .current {
+  padding: 0.1875rem 0.625rem;
+  background: #a18a5f;
+  color: #fefefe;
+  cursor: default;
+}
+.backgnd {
+  background-color: #a18a5f;
+}
+.ngx-pagination .current {
+  padding: 0.1875rem 0.625rem;
+  background: #f3ba2f !important;
+  color: #fefefe;
+  cursor: default;
+}
+.sortBtn {
+  background-color: #a18a5f78;
+  color: white;
+  height: fit-content;
+  width: fit-content;
+  text-align: top;
+  /* position: relative; */
+  /* left: 85%;
+  bottom: 21px; */
+}
+.dropMenu {
+  background-color: #00000075;
+  color: whitesmoke;
+  /* position: relative; */
+  /* left: 85%;
+  bottom: 21px; */
+}
+.dropItem:hover {
+  background-color: #a18a5f;
+  color: black;
+}

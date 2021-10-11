@@ -1,0 +1,53 @@
+<div
+  class="container"
+  style="
+    padding-top: 80px;
+    background-color: #000000;
+    width: 102.75%;
+    margin-bottom: 10px;
+    position: relative;
+    left: -14px;
+  "
+>
+  <div style="font-size: 1cm; color: white; font-weight: 700">Coin Chart</div>
+  <div style="position: relative; left: 42%; color: white">
+    <div class="dropdown" mdbDropdown>
+      <button
+        mdbDropdownToggle
+        type="button"
+        mdbBtn
+        class="dropdown-toggle waves-light dropBtn"
+        mdbWavesEffect
+      >
+        <strong style="font-weight: 600; color: white">Select coin:</strong>
+      </button>
+
+      <div class="dropdown-menu dropMenu">
+        <a
+          *ngFor="let item of coins"
+          class="dropdown-item dropItem"
+          (click)="load(item.id)"
+          >{{ item.name }}</a
+        >
+      </div>
+    </div>
+
+    <strong style="font-weight: 600; position: relative; left: 39px">
+      Current coin:<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;{{ coinId }}</strong
+    >
+  </div>
+</div>
+<div class="container" style="background-color: #181c30">
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center mt-5">
+    <!--Grid column-->
+    <div class="col-md-10">
+      <canvas id="lineChart"></canvas>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</div>
+
+<spinner [active]="spinner"></spinner>

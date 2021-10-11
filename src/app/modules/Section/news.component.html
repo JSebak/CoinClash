@@ -1,0 +1,70 @@
+<div
+  class="container"
+  style="
+    padding-top: 80px;
+    background-color: #000000;
+    width: 102.75%;
+    margin-bottom: 10px;
+    position: relative;
+    left: -14px;
+  "
+>
+  <div
+    class="row"
+    style="
+      font-size: 1cm;
+      color: white;
+      background-color: #000000;
+      width: 102.75%;
+      margin-bottom: 10px;
+    "
+  >
+    <h1>
+      <strong style="left: 40%; position: relative; font-weight: 700"
+        >News</strong
+      >
+    </h1>
+  </div>
+</div>
+<div class="row gx-lg-5" style="color: white">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" *ngFor="let item of news">
+    <div
+      class="card"
+      style="
+        height: 450px;
+        margin-bottom: 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+      "
+    >
+      <div
+        class="bg-image hover-overlay ripple"
+        data-ripple-color="dark"
+        style="align-self: center"
+      >
+        <img
+          [src]="item.imgURL"
+          class="img-fluid"
+          style="max-height: 200px"
+          onerror="this.src='./assets/default-news.jpg'"
+        />
+        <a href="#!">
+          <div
+            class="mask"
+            style="background-color: rgba(251, 251, 251, 0.15)"
+          ></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">
+          {{ item.title | slice: 0:50 }}
+          <span *ngIf="item.title?.length > 50">...</span>
+        </h5>
+        <p class="card-text">
+          {{ item.description | slice: 0:100 }}
+          <span *ngIf="item.description?.length > 100">...</span>
+        </p>
+        <a [href]="item.link" class="btn btn-primary boto">Go to the new</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<mdb-navbar
+  SideClass="navbar navbar-dark black justify-content-between navbar navbar-expand-lg fixed-top"
+>
+  <mdb-navbar-brand>
+    <div class="row">
+      <img
+        src="././assets/logo.png"
+        style="height: 45px; width: auto; margin-right: 1cm"
+      />
+
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link menuItem" aria-current="/" href="#">Coins</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menuItem" href="/chart">Charts</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link menuItem"
+              [routerLink]=""
+              (click)="redirect('news')"
+              >News</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menuItem" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </mdb-navbar-brand>
+</mdb-navbar>
+<!--
+        (blur)="onKey($event)"
+        (keyup.enter)="onKey($event)" -->

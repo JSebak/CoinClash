@@ -1,0 +1,79 @@
+.Card {
+  margin-top: 0.4cm;
+  margin-left: 15px;
+  margin-bottom: 0.1cm;
+  background-color: hsl(#a18a5f, 80%, 30%);
+}
+
+.cardTitle {
+  font-size: 1cm;
+  text-align: center;
+  -webkit-line-clamp: 2;
+}
+
+.comicList {
+  text-size-adjust: inherit;
+  text-overflow: clip;
+}
+
+.coinImage {
+  height: 2cm;
+  width: 2cm;
+  position: relative;
+
+  left: -0.5 cm;
+  top: -0.5 cm;
+}
+
+.characterTitle {
+  position: relative;
+  margin-right: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Create 2 columns and auto-place rows */
+}
+
+.no-link {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 1mm;
+  margin-bottom: 0.2cm;
+}
+
+.Title {
+  font-size: 1cm;
+  font-weight: 300;
+  position: relative;
+  /* left: 200%; */
+}
+
+.modalButton {
+  background-color: #ac8e3e;
+  color: rgb(194, 156, 76);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.theCard {
+  opacity: 0.8;
+  background-color: black;
+  box-shadow: 5px 5px 5px black;
+  border: black;
+  border-width: 2mm;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  color: white;
+  text-shadow: #a18a5f;
+  cursor: pointer;
+}
+
+.theCard:hover {
+  opacity: 1;
+}
+.modalBody {
+  background-color: #030303ce;
+  color: white;
+}
